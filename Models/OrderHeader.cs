@@ -7,8 +7,8 @@ namespace BookStore.Models.Models
 	public class OrderHeader
 	{
 		public int Id { get; set; }
-		public string? ApplicaitonUserId { get; set; }
-		[ForeignKey("UserId")]
+		public string? ApplicationUserId { get; set; }
+		[ForeignKey("ApplicationUserId")]
 		[ValidateNever]
 		public ApplicationUser? ApplicationUser { get; set; }
 		public DateTime OrderDate { get; set; }
