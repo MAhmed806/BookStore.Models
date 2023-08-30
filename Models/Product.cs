@@ -47,7 +47,7 @@ namespace BookStore.Models.Models
         [ForeignKey("CategoryId")]
         [ValidateNever]
         public Category Category { get; set; }
-        [ValidateNever]
+        [ValidateNever()]
         public List<ProductImage> ProductImages { get; set; }
 
     }
